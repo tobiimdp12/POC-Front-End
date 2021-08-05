@@ -4,8 +4,8 @@ Proof of concept: Front-End From Udemy ->https://www.udemy.com/course/universida
 <h1>Ejercicios resueltos 😎</h1>
   
   <ul>
-      <li>Ejercicio para practicar herencia-polimorfismo</li>
-      <li>Sistema de ventas</li>  
-      <li>Proyecto-mi-pc-store</li>  
+      <li>Ejercicio para practicar herencia-polimorfismo: https://github.com/tobiimdp12/Ejercicio-Herencia-Polimorfismo</li> 
+      <li>Sistema de ventas: https://github.com/tobiimdp12/Ejercicio-Sistemas-Ventas</li>  
+      <li>Proyecto-mi-pc-store: https://github.com/tobiimdp12/Ejercicio-Proyecto-Mi-Pc-Store</li>  
   </ul>
 
