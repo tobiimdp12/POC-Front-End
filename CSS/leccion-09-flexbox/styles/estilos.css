@@ -1,0 +1,68 @@
+h1
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.contenedor
+{
+    display: flex;
+    border: 3px solid violet;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 0, 255);
+    height: 300px;
+    /*flex-direction:column-reverse;
+    flex-wrap: wrap;*//*para que  los elementos se ajusten al tamaño de la pantalla*/
+    flex-flow: row wrap;
+
+    /**mover hacia la izquierda[defecto]**/
+    justify-content: flex-start;
+
+    /**mover hacia la derecha**/
+    justify-content: flex-end;
+
+    /**mover hacia el centro**/
+    justify-content:center;
+    
+    /**posicionarlos de forma dispersa**/
+    justify-content:space-between;
+
+    /**posicionarlos de forma dispersa mas pareja**/
+    justify-content:space-around;
+
+     /**posicionarlos de forma dispersa ultra pareja**/
+     justify-content:space-evenly;
+    /*--------------------------------*/
+    /*alinear los elementos a la parte superior del div*/
+    align-items: flex-start;
+
+    /*alinear los elementos a la parte inferior del div*/
+    align-items: flex-end;
+
+     /*alinear los elementos al centro del div*/
+     align-items: center;
+    /*los elementos se alinean de una forma en la que si un objeto es mas alto,se alinean segun
+    una linea imaginaria*/
+     align-items: baseline;
+
+    /*-------------------------------*/
+    /*alinear de forma vertical como se van a ver los elementos cuando haya mas de una fila*/
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+   
+}
+
+/*todos los elementos hijos del tipo p*/
+div.contenedor > p
+{
+    
+    color: rgb(0, 0, 0);
+    background-color:rgb(38, 255, 0);
+    margin: 20px;
+    padding: 50px;
+    max-width: 400px;
+    font-size: 1.5em;
+}

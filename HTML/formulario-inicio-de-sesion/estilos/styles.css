@@ -1,0 +1,93 @@
+html
+{
+    height: 100%;
+}
+
+body
+
+{
+    background:linear-gradient(#007b8b, #3f37c0);
+    font-family: leapis;
+    font-family: 'Otomanopee One',regular;
+}
+
+.container
+{
+    
+   margin: 50px auto;
+   width: 400px;
+   padding: 30px;
+   background:radial-gradient(#007b8b, #3f37c0);
+   border: #3f37c0;
+   border-radius: 20px;
+   transition:.2s;
+ 
+}
+
+.container:hover
+{
+    
+margin-top:30px;
+transition:.5s;
+
+}
+
+.container h2
+{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+}
+
+.container label
+{
+    font-size: 30px;
+    color: white;
+    transition: .5s;
+}
+
+.container label:hover
+{
+   
+    text-transform: uppercase;
+    letter-spacing: 23px;
+    transition:.5s;
+}
+.container input
+{
+    
+    width: 100%;
+    color:wheat;
+    font-size: 30px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px 0;
+    font-family: 'Otomanopee One',regular;
+}
+
+.container input[type="submit"]
+{
+    margin: 50px auto;
+    font-family: 'Otomanopee One',regular;
+    background-color:rgb(255, 0, 255);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container input[type="submit"]:hover
+{
+ 
+    margin: 50px auto;
+    border:none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 15px;
+    background-color:rgba(255, 0, 255, 0.541);
+    cursor: pointer;
+    transition: .5s;
+    
+}

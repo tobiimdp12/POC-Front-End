@@ -1,0 +1,54 @@
+body
+{
+    background-color: black;
+    color: wheat;
+}
+
+ul
+{
+    
+    list-style-type: none;
+    overflow: hidden;/*para que la lista se muestre de forma independiente*/
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+ul li
+{
+    float:left;
+
+}
+ol
+{
+    list-style: none;
+    counter-reset: contador;
+}
+
+ol li{
+    counter-increment: contador;
+}
+
+/*antes*/
+ol li::before
+{
+    content: 'Curso ' counter(contador)' ';
+}
+
+/*despues*/
+ol li::after
+{
+    content: '.' ;
+}
+li a
+{
+    display: block;
+    color: beige;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    color:violet;
+}

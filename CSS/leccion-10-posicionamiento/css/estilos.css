@@ -1,0 +1,62 @@
+div
+{
+    position: static;
+    /*por esto se alargaba el fixed top: 30px;al ser un position static no se aplica*/
+   /*como el tamaño es un porcentaje se adapta segun la resolucion de la pantalla*/
+   /* max-width: 400px;si o si hay que definir un tamaño*/
+    max-width: 50%;
+    border: 3px solid red;
+    margin: auto;
+}
+
+div.relativa
+{
+    position: relative;
+    /*100px de distancia con respecto al top*/
+    top: -200px;/*al ser un position relative se aplica*/
+    left: 190px;/*al ser un position relative se aplica*/
+   /*como el tamaño es un porcentaje se adapta segun la resolucion de la pantalla*/
+   /* max-width: 400px;si o si hay que definir un tamaño*/
+
+    max-width: 20%;
+    border: 3px solid red;
+    margin: auto;
+    padding-bottom: 500px;
+}
+
+div.fix
+{
+    /*el elemento fixed su posicion queda*/
+    position: fixed;
+    bottom:0;
+    right:0;
+    border: 3px solid firebrick;
+   
+   
+}
+div.absoluto/*el eleemento hijo sigue siempre al padre*/
+{
+    /*se posiciona segun el elemento padre,si no hay ningun elemento padre se ajusta segun elemento
+    cuerpo de la pagina
+    es un elemento estatico
+    el elemento padre no tiene que ser del tipo estatico*/
+    position: absolute;
+    bottom:0;
+    right:0;
+    border: 3px solid firebrick;
+   
+   
+}
+
+div.stickyy/**funciona de manera relativa hasta que se sale de la pantalla,cuando se sale
+pasa a ser fijo**/
+{
+    /*el elemento fixed su posicion queda*/
+    position: sticky;
+    position: -webkit-sticky;/*para que funcione en safari correctamente*/
+    bottom:0;
+    right:0;
+    border: 3px solid firebrick;
+   
+   
+}

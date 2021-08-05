@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/leccion-07-Selectores combinados/styles/estilos.css">
+    <title>Selectores combinados</title>
+</head>
+<body>
+    <h1>Selectores combinados</h1>
+    <div class="container descendiente">
+        Selectores Desendientes en cualquier
+        nivel interno
+        <p>cosa1</p>
+        <p>cosa2</p>
+
+        <section><!--cualquier elemento que encierre a un p-->
+            <p>cosa3</p>
+            <p>cosa4</p>
+        </section>
+    </div>
+
+    <div class="container hijo">
+        Selectores hijo directo
+        <p>cosa1</p>
+        <p>cosa2</p>
+
+        <div>
+            <p>cosaXXX</p>
+        </div>
+        <section><!--cualquier elemento que encierre a un p-->
+            <p>cosa3</p>
+            <p>cosa4</p>
+        </section>
+    </div>
+
+    <div class="container adyacente">
+        Selectores adyacentes
+        <p>cosa1</p>
+        <p>cosa2</p>
+        <section><!--cualquier elemento que encierre a un p-->
+            <p>cosa3</p>
+            <p>cosa4</p>
+        </section>
+    </div>
+    <p>cosaXXX</p>
+    <p>cosaXXXccc</p>
+
+    <div class="container hermano">
+    
+        <p>cosa1</p>
+        <p>cosa2</p>
+        <section><!--cualquier elemento que encierre a un p-->
+            <p>cosa3</p>
+            <p>cosa4</p>
+        </section>
+    </div>
+    <p>cosaXXX</p>
+    <p>cosaXXXccc</p>
+
+    <h2>Pseudo clases en css</h2>
+
+    <div class="container oculto">
+        <div>pasa por encima</div>
+        <p>Parrafito fito</p>
+
+    </div>
+    <div class="container primero">
+        <p>Parrafito fito</p>
+        <p>Parrafito fito2</p>
+
+    </div>
+
+    <div class="container text">
+        <p>seleccione un texto</p> 
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident neque hic quam cumque, doloremque inventore sed a assumenda rerum voluptatem aliquid minus voluptates qui, at alias esse repudiandae quas quod.</p>
+    </div>
+</body>
+</html>

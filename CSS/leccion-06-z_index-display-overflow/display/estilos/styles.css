@@ -1,0 +1,49 @@
+h1
+{
+    text-align: center;
+    color: crimson;
+}
+
+div.container
+{
+    width:80%;
+    height:20%;
+    overflow: auto;
+    margin: auto;
+    border: 10px dashed greenyellow;
+   
+}
+
+div.container span
+{
+    font-weight: bolder;
+    font-style:oblique;
+    display: inline-block;
+    padding: 40px;
+    height:40px;
+    background-color: red;
+   
+}
+
+.menu 
+{
+    
+    text-align: right;
+   
+    list-style: none;
+    
+}
+.menu li
+{
+    display: inline-block;
+    margin:20px;
+    padding:20px;
+    background-color: orangered;
+    border-radius: 2px;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}

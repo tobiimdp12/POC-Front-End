@@ -1,0 +1,60 @@
+
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+h1
+{
+    color: orange;
+}
+
+/*se muestra de este color si nosotros todavia
+no hicimos click*/
+a:link
+{
+    color:#fb8500;
+    text-decoration:none;
+}
+
+/*se muestra de este color si nosotros hicimos click*/
+a:visited
+{
+    color:#00b4fb;
+    text-decoration:none;
+}
+
+/*se muestra de este color si nosotros pasamos el raton
+por encima del texto*/
+a:hover
+{
+    color:#00b4fbb6;
+    text-decoration:none;
+}
+
+/*se muestra de este color si nosotros hacemos click*/
+a:active
+{
+    color:#1100ff;
+    text-decoration:underline;
+}
+
+.boton
+{
+    font-size: 40px;
+    padding: 20px 20px;
+    text-align: center;
+}
+.boton:link,.boton:visited
+{
+    color:#ffae00;
+    background-color: red;
+}
+
+.boton:hover,.boton:active
+{
+    color:#ffffff;
+    background-color: rgb(0, 0, 0);
+    text-decoration:underline;
+
+    transition: all .5s;
+}

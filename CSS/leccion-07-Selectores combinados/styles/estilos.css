@@ -1,0 +1,97 @@
+h1
+{
+    text-align: center;
+
+}
+
+div.container
+{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid violet;
+    padding: 15px;
+    color: red;
+}
+
+/* no importa el nivel    elemento a modificar*/
+div.container.descendiente p
+{
+    background-color:yellow;
+}
+/*el p del section no lo toma*/
+div.container.hijo > p
+{
+    background-color:rgb(5, 139, 16);
+}
+/*eso si el tienen que tener un padre en comun,como por ej el body*/
+/*solo toma el elemento adyacente o posterior a la etiqueta que posea esta clase*/
+div.container.adyacente + p/*si no especificamos el p toma cualquier elemento*/
+{
+    background-color:rgb(128, 5, 139);
+}
+
+div.container.hermano ~ p/*si no especificamos el p toma cualquier elemento*/
+{
+    background-color:rgb(139, 5, 5);
+}
+
+div.container.oculto p
+{
+  display: none;
+  
+}
+
+div.container.oculto:hover p 
+{
+    display: block;
+    background-color:black;
+    color: wheat;
+   
+}
+
+div.container.oculto p
+{
+  display: none;
+  
+}
+
+/*solo afectamos al primer hijo que sea una una etiqueta p*/
+div.container.primero p:first-child 
+{
+   font-variant: small-caps;
+   
+}
+/*cuando seleccionemos texto cambiara su color de fondo a amarillo*/
+/*es un pseudo elemento*/
+div.container p::selection
+{
+    background-color:yellow;
+}
+/*para todos los parrafos fuera de un div container*/
+p::selection
+{
+    background-color:rgb(3, 58, 3);
+    color: wheat;
+}
+/*cuando seleccionemos texto cambiara su color de fondo a amarillo*/
+/*es un pseudo elemento*/
+div.container.text p::selection
+{
+    background-color:yellow;
+    color: black;
+}
+
+/*agregar algo antes del parrafo*/
+div.container.text p::before
+{
+   content: "- ";
+   
+}
+
+/*agregar algo despues del parrafo*/
+div.container.text p::after
+{
+   content: "  -";
+   
+}

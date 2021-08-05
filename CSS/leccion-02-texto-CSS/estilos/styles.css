@@ -1,0 +1,36 @@
+h1
+{
+    color: pink;
+    background-color: rgb(70, 70, 62);
+    text-align: center;
+    text-transform: uppercase;
+    /*x-y-blur*/
+    text-shadow: 2px 2px 10px rgb(246, 246, 246);
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-decoration: overline underline;
+}
+
+.caja
+{
+    padding: 15px;
+    margin:auto;
+    width: 80%;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+.text
+{
+    /*para que el texto no tenga escalinatas*/
+    text-align: justify;
+    /*sangria*/
+    text-indent: 30px;
+    /*espacio entre las lineas*/
+    line-height: 5;
+    /*adaptar el texto*/
+    /*le chupa un huevo y no se adapta
+    white-space: nowrap;*/
+    /*me adapto naziii*/
+     white-space: normal;
+}
